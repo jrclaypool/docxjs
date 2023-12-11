@@ -1094,7 +1094,7 @@ class DocumentParser {
                     style["text-transform"] = xml_parser_1.default.boolAttr(c, "val", true) ? "uppercase" : "none";
                     break;
                 case "smallCaps":
-                    style["text-transform"] = xml_parser_1.default.boolAttr(c, "val", true) ? "lowercase" : "none";
+                    style["font-variant"] = xml_parser_1.default.boolAttr(c, "val", true) ? "small-caps" : "none";
                     break;
                 case "u":
                     this.parseUnderline(c, style);
